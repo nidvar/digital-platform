@@ -6,3 +6,26 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.home-page {
+  min-height: 1500px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  padding: 15px;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: antiquewhite;
+  }
+}
+
+/* UTILITIES ================================================= */
+
+.logo {
+  width: 25px;
+  height: 25px;
+}
