@@ -4,7 +4,11 @@ const router = Router();
 
 
 router.get('/', (req: Request, res: Response) => {
-  res.send('user')
+  try {
+    return res.status(200).json({ message: 'Hello World' });
+  } catch (error) {
+    console.log(error);
+  }
 })
 
 export default router
